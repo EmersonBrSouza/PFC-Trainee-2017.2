@@ -129,3 +129,29 @@ a:hover{
   margin: 0;
   padding: 20px;
 }
+
+.title{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+.subtitle{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+a.btn:hover{
+  color: white !important;
+  text-decoration: underline;
+}
+
+.bg-card{
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  min-height: 180px !important;
+  height: 180px !important;
+  max-height: 180px !important;
+}

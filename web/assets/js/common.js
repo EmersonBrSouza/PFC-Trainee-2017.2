@@ -13,7 +13,10 @@ $(document).ready(function($) {
     var offset = 80; 
 
     $('html, body').animate({
-        scrollTop: $("#pontuacao").offset().top - offset
-    }, 1000);
-});
+        	scrollTop: $("#pontuacao").offset().top - offset
+    	}, 1000);
+	});
+
+	$("#title-home").addClass('animated fadeInDownBig');
+	$("#cards-home").addClass('animated fadeInUpBig');
 });
