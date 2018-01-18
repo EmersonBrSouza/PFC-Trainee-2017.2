@@ -12,6 +12,7 @@
 	if(DEBUG === true){
 		define('URI_BASE',"http://".$_SERVER['SERVER_NAME']."/".$pasta."/index.php"); //Root URI
 		define('ROOT_URL',"http://".$_SERVER['SERVER_NAME']."/".$pasta."/"); //Root directory
+		define('DOWNLOAD_URL',"http://".$_SERVER['SERVER_NAME']."/index.php/");
 		define('VIEW_BASE',"http://".$_SERVER['SERVER_NAME']."/".$pasta."/views/");//Recupera a pasta da view
 		define('MEDIA_BASE',ABSOLUTE_PATH."/media/");
 		
@@ -24,6 +25,7 @@
 
 		define('URI_BASE',"http://".$_SERVER['SERVER_NAME']."/index.php/"); //Root URI
 		define('ROOT_URL',"http://".$_SERVER['SERVER_NAME']."/index.php/"); //Root directory
+		define('DOWNLOAD_URL',"http://".$_SERVER['SERVER_NAME']."/");
 		define('VIEW_BASE',"http://".$_SERVER['SERVER_NAME']."/views/");//Recupera a pasta da view
 		define('MEDIA_BASE',ABSOLUTE_PATH."/media/");
 

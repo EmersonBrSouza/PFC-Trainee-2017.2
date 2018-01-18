@@ -233,8 +233,8 @@
             $filter_director = array("member_type"=>"director"); //Get all directors
             $directors = $memberDAO->retrieve(array(),$filter_director);
 
-            $company_amount = doubleval($projectPrice) - doubleval($projectPrice*0.2); // 80% to company
-            $team_amount = doubleval($projectPrice) - doubleval($company_amount); //20% to team
+            $company_amount = doubleval($projectPrice)*0.8; // 80% to company
+            $team_amount = doubleval($projectPrice)*0.2; //20% to team
 
             $directors_bonus_amount = 0;
             $company_final_amount = 0;
@@ -243,8 +243,8 @@
             if(count($directors) == 0){
                 $company_final_amount = doubleval($company_amount); //100% to company
             }else{
-                $directors_bonus_amount = doubleval($company_amount) - doubleval($company_amount*0.8175); //18.75% to directors
-                $company_final_amount = doubleval($company_amount) - doubleval($directors_bonus_amount); //81.25% to company
+                $directors_bonus_amount = doubleval($company_amount)*0.1875; //18.75% to directors
+                $company_final_amount = doubleval($company_amount)*0.8125; //81.25% to company
 
                 $director_final_bonus = doubleval($directors_bonus_amount)/count($directors); //Divides the amount to directors
             }
@@ -254,8 +254,8 @@
             $members_amount = 0;
 
             if($this->existsVendor($_POST['project_id'])){
-                $vendor_bonus = doubleval($team_amount) - doubleval($team_amount*0.9); //10% to vendor;
-                $members_amount = doubleval($team_amount) - doubleval($vendor_bonus); //90% to team;
+                $vendor_bonus = doubleval($team_amount)*0.1; //10% to vendor;
+                $members_amount = doubleval($team_amount)*0.9; //90% to team;
             }else{
                 $members_amount = doubleval($team_amount); //100% to team;
             }

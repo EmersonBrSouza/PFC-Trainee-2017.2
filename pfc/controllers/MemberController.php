@@ -309,7 +309,7 @@
                     //Saves file on server and send the response containing the path.
                     $path = $directoryName.'/'.$finalName;
                     move_uploaded_file($_FILES['files']['tmp_name'][$i],$path);
-                    array_push($paths,ROOT_URL."media/requests/".$finalName);
+                    array_push($paths,DOWNLOAD_URL."media/requests/".$finalName);
                 }
                 return $paths;
             }
