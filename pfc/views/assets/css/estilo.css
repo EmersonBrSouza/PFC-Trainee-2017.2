@@ -1,0 +1,235 @@
+html,body{
+  font-family: 'Raleway', sans-serif !important;
+  min-height: 100vh !important;
+}
+
+input[type='number'] {
+    -moz-appearance:textfield;
+}
+
+
+input[type="file"]{
+  display: none;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+}
+
+button{
+	cursor: pointer;
+}
+
+.input-group{
+	margin-top: 3vh;
+	margin-bottom: 3vh;
+}
+
+
+label.btn{
+	cursor: pointer;
+}
+
+.descricao > span, span.observacao{
+  font-size: 14px;
+  line-height: 21px;
+  color: #404040;
+}
+
+.card-text{
+  font-size: 14px;
+  line-height: 21px;
+}
+
+
+.tituloSecao{
+  color: #1a1a1a;
+  font-weight: 550;
+}
+
+.nav-item{
+  font-weight: 700;
+  font-size: 15px;
+}
+
+
+a:hover{
+  color: #1d6fb7 !important;
+}
+
+
+.grafico-maioria{
+  height: 30px;
+  background-color: #1d6fb7;
+  color: white;
+}
+
+.grafico-minoria{
+  height: 30px;
+}
+
+
+.grafico-90{
+  width: 90%;
+  border-top:3px solid #FF0003;
+  border-bottom: 3px solid #FF0003;
+  border-left: 3px solid #FF0003;
+}
+
+.grafico-81{
+  width: 81.75%;
+  border-top:3px solid #A2FF00;
+  border-bottom: 3px solid #A2FF00;
+  border-left: 3px solid #A2FF00;
+}
+
+.grafico-80{
+  width: 80%;
+  border-top:3px solid #A2FF00;
+  border-bottom: 3px solid #A2FF00;
+  border-left: 3px solid #A2FF00;
+}
+
+.grafico-20{
+  width: 20%;
+  border-top:3px solid #FF0003;
+  border-bottom: 3px solid #FF0003;
+  border-right: 3px solid #FF0003;
+}
+
+.grafico-18{
+  width: 18.25%;
+  border-top:3px solid #A2FF00;
+  border-bottom: 3px solid #A2FF00;
+  border-right: 3px solid #A2FF00;
+}
+
+.grafico-10{
+  width: 10%;
+  border-top:3px solid #FF0003;
+  border-bottom: 3px solid #FF0003;
+  border-right: 3px solid #FF0003;
+}
+
+.top-shadow, .bottom-shadow{
+  box-shadow:  0 0px 10px rgba(0,0,0,0.2);
+}
+
+.middle-shadow{
+  box-shadow:  0 2px 8px rgba(0,0,0,0.5);
+}
+
+.navbar-brand-centered {
+  position: relative;
+  left: 50%;
+  display: block;
+  width: 120px;
+}
+
+.copyrights {
+  color: #262626;
+  background-color: #ffffff;
+  text-align: center;
+  min-height: 60px;
+  width: 100%;
+  margin: 0;
+  padding: 20px;
+}
+
+.title{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 400;
+  text-align: center;
+}
+
+.subtitle{
+  font-family: 'Roboto', sans-serif;
+  font-weight: 300;
+  text-align: center;
+}
+
+.form-control{
+  border: 2px solid #e6e6e6 !important;
+  border-radius: 0px !important;
+}
+.form-control:active,.form-control:focus{
+  box-shadow: none !important;
+  border:2px solid #1d6fb7 !important; 
+}
+a.btn:hover{
+  color: white !important;
+  text-decoration: underline;
+}
+
+.bg-card{
+  background-position: center !important;
+  background-repeat: no-repeat !important;
+  background-size: contain !important;
+  min-height: 180px !important;
+  height: 180px !important;
+  max-height: 180px !important;
+}
+
+label.btn{
+  background-color: white !important;
+  color: black !important;
+  border: 2px solid #e6e6e6 !important;
+  box-shadow: none !important;
+}
+
+label.btn.focus,label.btn.active,label.btn:hover{
+  border: 2px solid #1d6fb7 !important;
+  background-color: white !important;
+}
+.img-membro{
+  cursor: pointer;
+  max-width: 150px;
+  max-height: 150px;
+}
+
+.ratio{
+  background-position: top center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  height: 0;
+  padding-bottom: 100%;
+  position: relative;
+  width: 100%;
+}
+
+.img-responsive{
+  display: block;
+  height: auto;
+  max-width: 100%;
+}
+.logo-bg{
+  background: url('../images/logo-bg.png');
+  opacity: 0.2;
+  background-repeat: no-repeat;
+  background-size: contain;
+  min-height: 80vh;
+}
+
+#add-member{
+  transition: all 2s linear 1s;;
+}
+
+.flex-grow {
+   flex: 1;
+}
+
+.btn-primary{
+  border-radius: 0px !important;
+  border: 2px solid #1d6fb7 !important;
+  background: transparent !important;
+  color:black !important;
+  font-weight: 600 !important;
+}
+
+.btn-primary:hover{
+  background: #1d6fb7 !important;
+  color:white !important;
+  text-decoration: none !important;
+}
